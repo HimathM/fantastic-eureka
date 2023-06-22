@@ -1,0 +1,721 @@
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600;700;800&display=swap');
+
+/* html section configuration */
+html {
+    /* Smooth Scrolling and Snapping */
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+/* body section configuration */
+body {
+    font-family: 'Martian Mono', monospace;
+    background: #1e1e2e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Making all sections snapping on scroll and margin settings */
+section {
+    scroll-snap-align: start;
+    scroll-margin-top: 96px;
+}
+
+/* Navbar Configuration */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background-color: rgba(30, 30, 46, 0.95);
+    z-index: 1;
+}
+
+/* Navbar Configuration */
+header a,
+li {
+    color: #cdd6f4;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Navbar Logo Configuration */
+.logo {
+    font-size: 22px;
+    color: #f38ba8;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* Navbar Configuration */
+.navbar {
+    list-style: none;
+}
+
+/* Navbar Configuration */
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* Navbar Configuration */
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Navbar Configuration Hover */
+.navbar li a:hover {
+    color: #74c7ec;
+}
+
+/* Navbar Configuration Contact */
+.contact {
+    padding: 9px 22px;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    background: #a6e3a1;
+    animation: color-change 2s linear infinite;
+}
+
+/* Hue Animation Color Change */
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* The Front Page */
+.front {
+    height: 100vh;
+    margin-top: -90px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgba(30, 30, 46, 0.96);
+    overflow: hidden;
+}
+
+/* Background Front Page */
+.front video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Second Section */
+.middle {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgba(30, 30, 46, 0.90);
+}
+
+/* Text and Other Configuration */
+.content {
+    text-align: center;
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: -90px;
+}
+
+/* Text and Other Configuration */
+.content h1 {
+    font-size: 3.2em;
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+/* Text and Other Configuration */
+.content p {
+    font-size: 1.1em;
+    color: #bac2de;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+/* Text and Other Configuration */
+.content a {
+    text-decoration: none;
+    color: #89b4fa;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+    padding: 10px 12px;
+    background-color: #1e1e2e;
+}
+
+/* Text and Other Configuration Hover */
+.content a:hover {
+    color: #f38ba8;
+    background-color: #11111b;
+}
+
+/* Background */
+.middle video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text and Other Configuration */
+.middle h1 {
+    margin: 0;
+}
+
+/* Third Section */
+.third {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: rgba(30, 30, 46, 0.80);
+}
+
+/* Background */
+.third video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Text and Other Configuration */
+.third h1 {
+    margin: 0;
+
+}
+
+/* Text and Other Configuration */
+.third p {
+    color: blue;
+}
+
+/* Text and Other Configuration */
+.third-c {
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 90px 60px;
+    margin-top: -90px;
+    background-color: rgba(30, 30, 46, 0.70);
+    border-radius: 20px;
+}
+
+/* Text and Other Configuration */
+.third-c h1 {
+    font-size: 3.2em;
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+/* Text and Other Configuration */
+.third-c p {
+    font-size: 1.2em;
+    color: #bac2de;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+/* Text and Other Configuration */
+.third-c a {
+    text-decoration: none;
+    color: #89b4fa;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+    padding: 10px 12px;
+    background-color: #1e1e2e;
+
+}
+
+/* Text and Other Configuration Hover */
+.third-c a:hover {
+    color: #f38ba8;
+    background-color: #11111b;
+}
+
+/* Forth Section */
+.forth {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 50px;
+
+    overflow: hidden;
+    background-color: rgba(30, 30, 46, 0.877);
+    text-align: center;
+}
+
+/* Background */
+.forth video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text and Other Configuration */
+.forth h1 {
+    margin: 0;
+}
+
+/* Text and Other Configuration */
+.text-wrapper h1 {
+    font-size: 3.2em;
+    font-weight: 800;
+    color: #89b4fa;
+}
+
+/* Text and Other Configuration */
+.text-wrapper p {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #bac2de;
+}
+
+/* Text and Other Configuration */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Card Configuration */
+.card {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #45475a;
+    position: relative;
+}
+
+/* Card Configuration Image */
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+/* Card Configuration */
+.card-body {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+/* Card Configuration Visible On Hover */
+.card:hover .card-body {
+    top: 0;
+    opacity: 1;
+}
+
+/* Card Configuration */
+.card-2 {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #45475a;
+    position: relative;
+}
+
+/* Card Configuration Image */
+.card-img-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+/* Card Configuration */
+.card-body-2 {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+/* Card Configuration Visible On Hover */
+.card-2:hover .card-body-2 {
+    top: 0;
+    opacity: 1;
+}
+
+/* Card Configuration */
+.card-3 {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #45475a;
+    position: relative;
+}
+
+/* Card Configuration Image */
+.card-img-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+/* Card Configuration */
+.card-body-3 {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+/* Card Configuration Visible on Hover */
+.card-3:hover .card-body-3 {
+    top: 0;
+    opacity: 1;
+}
+
+/* Card Configuration */
+.card-4 {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #45475a;
+    position: relative;
+}
+
+/* Card Configuration Image */
+.card-img-4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+/* Card Configuration */
+.card-body-4 {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+/* Card Configuration Visible On Hover */
+.card-4:hover .card-body-4 {
+    top: 0;
+    opacity: 1;
+}
+
+/* Card Configuration */
+.card-5 {
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #45475a;
+    position: relative;
+}
+
+/* Card Configuration Image */
+.card-img-5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+/* Card Configuration */
+.card-body-5 {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+/* Card Configuration Visible On Hover */
+.card-5:hover .card-body-5 {
+    top: 0;
+    opacity: 1;
+}
+
+/* Common Settings For Texts in cards */
+.title-card {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fab387;
+    font-weight: 800;
+}
+
+/* Common Settings For Texts in cards */
+.sub-card {
+    text-transform: capitalize;
+    color: #b4befe;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Common Settings For Texts in cards */
+.info-card {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 40px 0;
+    font-weight: 600;
+    color: #cdd6f4;
+}
+
+/* Button on Card */
+.btn {
+    text-decoration: none;
+    color: #89b4fa;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.5s ease 0s;
+    padding: 10px 12px;
+    background-color: #1e1e2e;
+}
+
+/* Button on Card Hover */
+.btn:hover {
+    color: #f38ba8;
+    background-color: #11111b;
+}
+
+/* Scroll Down Text */
+.ldt {
+    font-size: 22px;
+    color: #cba6f7;
+    animation: visible 6s linear infinite;
+    margin-top: 60px;
+    font-weight: 800;
+}
+
+/* Scroll Down Text Animation - Hue and Opacity */
+@keyframes visible {
+    0% {
+        opacity: 10%;
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        opacity: 100%;
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        opacity: 10%;
+        filter: hue-rotate(0deg);
+    }
+}
+
+/* Main Text Configuration */
+.hero {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/* Main Text Configuration Sub */
+.hero-b {
+    font-size: 22px;
+    font-weight: 700;
+    color: #89dceb;
+}
+
+/* Main Text Configuration */
+.hero-alt {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* Main Text Configuration Highlighting */
+.hero-hg {
+    color: #f38ba8;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+/* Footer */
+.footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Footer Setting */
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40vh;
+}
+
+/* Footer */
+.sitemap-footer {
+    width: 40vh;
+    height: 20vh;
+}
+
+/* Footer */
+.contact-footer {
+    width: 40vh;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.sitemap-footer h1 {
+    color: #89b4fa;
+}
+
+/* Footer */
+.contact-footer h1 {
+    color: #89b4fa;
+}
+
+/* Footer */
+.sitemap-footer ul {
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+/* Footer */
+.sitemap-footer li {
+    padding: 1.2px;
+}
+
+/* Footer */
+.footer a {
+    color: #bac2de;
+}
+
+/* Footer */
+.footer a:hover {
+    color: #f38ba8;
+}
+
+/* Footer */
+.footer-f span {
+    color: #f38ba8;
+}
+
+/* Footer */
+.footer-f h1,
+p {
+    color: #89b4fa;
+}

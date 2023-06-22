@@ -1,0 +1,219 @@
+/* Importing Font */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;500;600;700;800&display=swap');
+
+/* html section */
+html {
+    /* Makes Smooth Scrolling */
+    scroll-behavior: smooth;
+}
+
+/* Body Section Configuration */
+body {
+    font-family: 'Martian Mono', monospace;
+    background: #1e1e2e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Making the Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    background-color: rgba(30, 30, 46, 0.95);
+    z-index: 1;
+}
+
+/* Navbar Configuration */
+header a,
+li {
+    color: #cdd6f4;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Navbar Logo Configuration */
+.logo {
+    font-size: 22px;
+    color: #f38ba8;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* Navbar Configuration */
+.navbar {
+    list-style: none;
+}
+
+/* Navbar Configuration */
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* Navbar Configuration */
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Navbar Configuration Hover */
+.navbar li a:hover {
+    color: #74c7ec;
+}
+
+/* Navbar Configuration Button */
+.contact {
+    padding: 9px 22px;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    background: #a6e3a1;
+    animation: color-change 2s linear infinite;
+}
+
+/* H1 Tag Configuration */
+.page h1 {
+    color: #cdd6f4;
+    margin-top: 80px;
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+/* ColorChange Animation - Using hue */
+@keyframes color-change {
+    0% {
+        filter: hue-rotate(0deg);
+
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Page Div Configuration */
+.page {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* p Tag Configuration */
+.page p {
+    margin: 50px;
+    color: #bac2de;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+/* Footer Configuration */
+.footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Footer Configuration */
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40vh;
+}
+
+/* Footer Configuration */
+.sitemap-footer {
+    width: 40vh;
+    height: 20vh;
+}
+
+/* Footer Configuration */
+.contact-footer {
+    width: 40vh;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+/* Footer Configuration */
+.sitemap-footer h1 {
+    color: #89b4fa;
+}
+
+/* Footer Configuration */
+.contact-footer h1 {
+    color: #89b4fa;
+}
+
+/* Footer Configuration */
+.sitemap-footer ul {
+    padding-left: 1em;
+    list-style-type: none;
+}
+
+/* Footer Configuration */
+.sitemap-footer li {
+    padding: 1.2px;
+}
+
+/* Footer Configuration */
+.footer a {
+    color: #bac2de;
+}
+
+/* Footer Configuration Hover */
+.footer a:hover {
+    color: #f38ba8;
+}
+
+/* Footer Configuration */
+.footer-f span {
+    color: #f38ba8;
+}
+
+/* Footer Configuration */
+.footer-f h1,
+p {
+    color: #89b4fa;
+}
+
+/* Page Div Configuration - Anchor Tag */
+.page a {
+    color: #89b4fa;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #313244;
+}
+
+
+/* Page Div Configuration - Anchor Tag Hover */
+.page a:hover {
+    background-color: #11111b;
+    color: #f38ba8;
+}
+
+/* Page Div Configuration */
+.page li {
+    list-style-position: inside;
+    padding: 6px;
+    color: #f5bde6;
+}
+
+/* Div to align text left */
+.ol-d {
+    text-align: left;
+}
